@@ -1,11 +1,12 @@
 import "./App.css";
 import { Cards } from "./componentes/cards/Cards";
-import ProductList from "./componentes/produtos/ProductList";
+import { Header } from "./componentes/header/Header";
+
 
 function App() {
   return (
     <>
-      <ProductList />
+      <Header />
       <Cards />
     </>
   );

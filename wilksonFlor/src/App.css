@@ -1,5 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+:root {
+  --archivo: "Archivo", sans-serif;
+  --space: "Space Grotesk", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Header */
+.headerContainer {
+  border: solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headerContainer h2 {
+  margin-block: 20px;
+}
+.headerContainer span {
+  padding-inline: 10px;
+}
+/* Cards */
+.containerCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textTCards {
+  text-align: center;
+  margin-block: 80px;
+}
+
+.textTCards h2 {
+  font-family: var(--archivo);
+  margin-block: 20px;
+}
+
+.textTCards p {
+  font-family: var(--archivo);
+  font-size: 1.5rem;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.cardsContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.bgImg {
+  width: 100%;
+  height: 150px;
+  max-height: 350px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.bgImg img {
+  width: 70%;
+}
+
+.cards {
+  width: 380px;
+  height: 300px;
+  background-color: #cecece47;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  gap: 12px;
+}
+
+.cards .modelo {
+  color: #7ca2f4;
+  font-size: 1rem;
+}
+
+.cards .nome {
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: var(--archivo);
+}
+
+.cards .preco {
+  font-family: var(--space);
+  font-size: 1.1rem;
+  font-weight: bold;
 }
