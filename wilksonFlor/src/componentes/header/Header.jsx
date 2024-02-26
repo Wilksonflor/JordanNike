@@ -7,26 +7,30 @@ export const Header = () => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    maxHeight: "400px",
+    height: "500px",
     width: "100%",
   };
   return (
     <header className="headerContainer">
-      <h2>
-        <span>
-          <FaTruck />
+      <div className="containerFrete">
+        <span className="carFrete">
+          <FaTruck className="iconeCarrinho" />
         </span>
+
+      <h2>
         Frete Grátis para todo o Brasil
       </h2>
-      <div style={bgHeader}>
-        <div>
+      </div>
+      <div style={bgHeader} className="containerTextHeader">
+        <div className="textHeader">
           <h3>
             <img src={logo} alt="" />
           </h3>
-          <h1>
-            A melhor loja de Jordan O tênis Jordan é fruto de uma velha e forte
-            parceria entre a Nike e o jogador Michael Jordan.
-          </h1>
+          <h1>A melhor loja de Jordan </h1>
+          <p>
+            O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e
+            o jogador Michael Jordan.
+          </p>
         </div>
       </div>
     </header>
