@@ -68,6 +68,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
+  border-radius: 4px;
 }
 
 .bgImg img {
@@ -78,8 +79,8 @@
   width: 380px;
   height: 300px;
   background-color: #cecece47;
-  border-radius: 1rem;
-  padding: 1rem;
+  border-radius: 5px;
+  padding: 0.7rem;
 }
 
 .text {
