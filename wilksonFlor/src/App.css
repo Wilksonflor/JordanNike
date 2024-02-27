@@ -175,17 +175,13 @@ footer {
 
 @keyframes moverCarrinho {
   0% {
-    transform: translateX(0); /* Começa do ponto inicial */
+    transform: translateX(0);
   }
   50% {
-    transform: translateX(
-      50px
-    ); /* Meio da animação: carrinho andando para a direita */
+    transform: translateX(50px);
   }
   100% {
-    transform: translateX(
-      0
-    ); /* Fim da animação: carrinho volta para a posição inicial */
+    transform: translateX(0);
   }
 }
 .containerFrete {

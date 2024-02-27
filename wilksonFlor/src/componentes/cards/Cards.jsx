@@ -6,6 +6,8 @@ import img5 from "../../assets/produtos/air-jordan-1-mid-light-smoke-grey-gs-1-1
 import img6 from "../../assets/produtos/air-jordan-1-mid-bright-citrus-1-1000 1.png";
 import img7 from "../../assets/produtos/JordanBlack.png";
 import img8 from "../../assets/produtos/Jordan-Shoes-PNG-Images.png";
+import img9 from "../../assets/produtos/jordan 11 - legend.png";
+import img10 from "../../assets/produtos/Air Jordan 6 Carmine (2021).png";
 
 const produtosList = [
   {
@@ -64,13 +66,20 @@ const produtosList = [
     modelo: "Tênis Air Jordan",
     preco: "1249,90",
   },
-  // {
-  //   id: 8,
-  //   img: img8,
-  //   nome: "Air Jordan IV",
-  //   modelo: "Tênis Air Jordan",
-  //   preco: "1249,90",
-  // },
+  {
+    id: 9,
+    img: img9,
+    nome: "Air Jordan 11 - Legend",
+    modelo: "Tênis Air Jordan",
+    preco: "1499,90",
+  },
+  {
+    id: 10,
+    img: img10,
+    nome: "Air Jordan 6 Carmine - (2021)",
+    modelo: "Tênis Air Jordan",
+    preco: "1249,90",
+  },
 ];
 
 export const Cards = () => {
