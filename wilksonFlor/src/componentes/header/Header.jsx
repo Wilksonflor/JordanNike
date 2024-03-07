@@ -22,7 +22,7 @@ export const Header = ({ quantidadeCarrinho }) => {
         <div className="containerCarrinhoCompras">
           <button className="carrinhoCompras">
             <FaShoppingCart />
-            {quantidadeCarrinho}
+            <span className="quantidadeCart">{quantidadeCarrinho}</span>
           </button>
         </div>
       </div>

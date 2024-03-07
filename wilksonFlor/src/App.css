@@ -26,6 +26,11 @@
 .headerContainer span {
   padding-inline: 10px;
 }
+.quantidadeCart {
+  color: red;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
 .containerTextHeader {
   display: flex;
   align-items: start;
