@@ -1,9 +1,27 @@
-// import { useState } from "react";
+import { useState, useEffect } from "react";
 import produtosList from "../../ProdutosData/ProdutosList.jsx";
+import { Header } from "../header/Header.jsx";
+import { message } from "antd";
 
 export const Cards = () => {
+  const [itemCarrinho, setItemCarrinho] = useState([]);
+
+  const handleAdicionarAoCarrinho = (produto) => {
+    setItemCarrinho([...itemCarrinho, produto]);
+    setTimeout(() => {
+      message.success(`Produto ${produto.nome} adicionado ao carrinho`);
+    });
+  };
+
+  useEffect(() => {
+    [itemCarrinho];
+  });
+
+  const quantidadeCarrinho = itemCarrinho ? itemCarrinho.length : "";
+
   return (
     <>
+      <Header quantidadeCarrinho={quantidadeCarrinho} />
       <div className="containerCards">
         <div className="textTCards">
           <h2>Os melhores em só lugar</h2>
@@ -25,7 +43,12 @@ export const Cards = () => {
                 <p className="modelo">{data.modelo}</p>
                 <p className="preco">R$ {data.preco}</p>
 
-                <button>Comprar</button>
+                <button
+                  onClick={() => handleAdicionarAoCarrinho(data)}
+                  className="btnComprar"
+                >
+                  Comprar
+                </button>
               </div>
             </div>
           ))}

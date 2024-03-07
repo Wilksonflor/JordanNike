@@ -2,7 +2,7 @@ import { FaTruck, FaShoppingCart } from "react-icons/fa";
 import jordan from "../../assets/jordan/mjordan.png";
 import logo from "../../assets/jordan/logo.png";
 
-export const Header = () => {
+export const Header = ({ quantidadeCarrinho }) => {
   const bgHeader = {
     backgroundImage: `url(${jordan})`,
     backgroundPosition: "center",
@@ -22,6 +22,7 @@ export const Header = () => {
         <div className="containerCarrinhoCompras">
           <button className="carrinhoCompras">
             <FaShoppingCart />
+            {quantidadeCarrinho}
           </button>
         </div>
       </div>

@@ -57,28 +57,28 @@ const produtosList = [
     img: img7,
     nome: "Air Jordan Black",
     modelo: "Tênis Air Jordan",
-    preco: "1399,90",
+    preco: "1.399,90",
   },
   {
     id: 8,
     img: img8,
     nome: "Air Jordan Shoes",
     modelo: "Tênis Air Jordan",
-    preco: "1249,90",
+    preco: "1.249,90",
   },
   {
     id: 9,
     img: img9,
     nome: "Air Jordan 11 - Legend",
     modelo: "Tênis Air Jordan",
-    preco: "1499,90",
+    preco: "1.499,90",
   },
   {
     id: 10,
     img: img10,
     nome: "Air Jordan 6 Carmine - (2021)",
     modelo: "Tênis Air Jordan",
-    preco: "1249,90",
+    preco: "1.249,90",
   },
 ];
 
