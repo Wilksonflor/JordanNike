@@ -1,6 +1,7 @@
-import { FaTruck } from "react-icons/fa";
+import { FaTruck, FaShoppingCart } from "react-icons/fa";
 import jordan from "../../assets/jordan/mjordan.png";
 import logo from "../../assets/jordan/logo.png";
+
 export const Header = () => {
   const bgHeader = {
     backgroundImage: `url(${jordan})`,
@@ -10,16 +11,19 @@ export const Header = () => {
     height: "500px",
     width: "100%",
   };
+
   return (
     <header className="headerContainer">
       <div className="containerFrete">
         <span className="carFrete">
           <FaTruck className="iconeCarrinho" />
         </span>
-
-      <h2>
-        Frete Grátis para todo o Brasil
-      </h2>
+        <h2>Frete Grátis para todo o Brasil</h2>
+        <div className="containerCarrinhoCompras">
+          <button className="carrinhoCompras">
+            <FaShoppingCart />
+          </button>
+        </div>
       </div>
       <div style={bgHeader} className="containerTextHeader">
         <div className="textHeader">
