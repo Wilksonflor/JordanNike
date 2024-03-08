@@ -31,6 +31,19 @@
   font-size: 1.1rem;
   font-weight: bold;
 }
+/* .carrinhoCompras {
+  border: solid red;
+  position: relative;
+}
+.carrinhoCompras span {
+  position: absolute;
+  left: 15px;
+  bottom: 25px;
+  z-index: 1000;
+} */
+h2 {
+  font-family: var(--archivo);
+}
 .containerTextHeader {
   display: flex;
   align-items: start;
