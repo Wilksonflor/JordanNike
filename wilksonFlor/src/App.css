@@ -225,6 +225,21 @@ footer {
   font-size: 2rem;
 }
 
+/* @media only screen and (max-width: 320px) {
+  .containerFrete {
+    margin-right: 10px;
+  }
+  .cardsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  
+    margin: 0;
+
+  }
+  .cards {
+    width: fit-content;
+    border: solid red;
+  }
+} */
 @media only screen and (max-width: 418px) {
   .containerFrete {
     width: 100%;
@@ -244,7 +259,12 @@ footer {
     width: 90%;
   }
   .cardsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 10px;
     width: fit-content;
+  }
+  .cards {
+    width: 100%;
   }
 }
 
@@ -267,6 +287,9 @@ footer {
     width: 90%;
   }
   .cardsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* width: 50%; */
+    margin: 0;
     width: fit-content;
   }
 }
